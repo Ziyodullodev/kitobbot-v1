@@ -1,6 +1,6 @@
 <?php
 
-// require_once "config.php";
+require_once "config.php";
 require_once "autoload.php";
 require_once 'lang/i18n.class.php';
 require_once 'db/db.php';
