@@ -18,7 +18,9 @@ if ($text == "/start") {
     if ($user_data['id'] > 0) {
         $tg->send_message(L::start);
     } else {
-        $tg->set_inlineKeyboard([["text" => "🇺🇿O`zbek tili", "callback_data" => "uz"], ["text" => "🇷🇺Русский язык", "callback_data" => "ru"]])
+        $tg->set_inlineKeyboard([
+        [["text" => "🇺🇿O`zbek tili", "callback_data" => "uz"], ["text" => "🇷🇺Русский язык", "callback_data" => "ru"]]
+    ])
         ->send_message(L::choice_lang);
         $db->set_user($cid, $firstname . " " . $lastname, "uz");
     }

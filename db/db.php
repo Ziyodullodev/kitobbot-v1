@@ -10,10 +10,10 @@ class Database {
     }
     // Properties
     function connect(){
-        $host = "213.32.7.133"; // в 90% случаев это менять не надо
-        $password = "bI1mX8yP9w";
-        $username = "search";
-        $databasename = "search";
+        $host = "157.90.213.150"; // в 90% случаев это менять не надо
+        $password = "wA8gE9eO5d";
+        $username = "kitobbot";
+        $databasename = "kitobbot";
         setlocale(LC_ALL,"ru_RU.UTF8");
         $db = new mysqli($host, $username, $password, $databasename, 3306);
         $db->set_charset('utf8mb4');
